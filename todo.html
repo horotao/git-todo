@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h1>我的任务</h1>
+      <div class="stats" id="stats">0 个任务待完成</div>
+    </div>
+
+    <div class="input-area">
+      <input id="input" type="text" placeholder="添加新任务，按 Enter 或点击 +" maxlength="200" />
+      <button id="addBtn" title="添加">+</button>
+    </div>
+
+    <div class="filters">
+      <button class="active" data-filter="all">全部</button>
+      <button data-filter="active">未完成</button>
+      <button data-filter="done">已完成</button>
+    </div>
+
+    <ul class="list" id="list"></ul>
+
+    <div class="footer">
+      <span id="countLabel">共 0 条</span>
+      <button id="clearBtn" disabled>清除已完成</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
